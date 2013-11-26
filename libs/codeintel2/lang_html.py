@@ -112,7 +112,7 @@ class HTMLLangIntel(XMLLangIntel):
             if not node.end:
                 names.append(buf.xml_tree.tagname(node))
                 continue
-        return [('element', tagName+">") for tagName in names]
+            return [('element', tagName+">") for tagName in names]
 
 
 class HTMLBuffer(UDLBuffer, XMLParsingBufferMixin):
